@@ -1,0 +1,24 @@
+{
+  "name": "chatExample"
+, "description": ""
+, "version": "0.0.0"
+, "author": ""
+, "dependencies": {
+    "underscore": "1.2.x"
+  , "moment": "1.5.x"
+  , "less": "x.x.x"
+  , "LiveDocument": "x.x.x"
+  , "SpaceMagic": "x.x.x"
+  , "LiveView": "x.x.x"
+  , "LiveController": "x.x.x"
+  , "AssetPipeline": "x.x.x"
+  }
+
+, "scripts": {                                                                                                                                                                               
+     "start": "sudo ./node_modules/.bin/spacemagic server --port 80"
+   }
+, "devDependencies": {
+    "mocha": "0.13.x"
+  , "should": "0.3.x"
+  }
+, "engine": "node >= 0.6.0" }
