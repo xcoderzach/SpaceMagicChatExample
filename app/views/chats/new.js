@@ -12,8 +12,6 @@ module.exports = View.define("NewChatView")
 
     var name = element.find(".name").val() 
  
-    Chat.create({ content: chat, name: name }).on("invalid", function() {
-      console.log(arguments)
-    })
+    Chat.create({ content: chat, name: name })
  
   }) 
