@@ -1,8 +1,10 @@
 var LiveController = require("LiveController/lib/live_controller")
-  , StaticView = require("views/static")
+  , StaticView     = require("views/static")
+  , Chat           = require("../models/chat")
+  , ChatView       = require("../views/chats/list")
 
 LiveController.Controller("/", function(app) {
   app.get(function() {
-    var view = new StaticView("/templates/pages/start.html")
+    this.view = new ChatView(Chat.find())
   })
 })
